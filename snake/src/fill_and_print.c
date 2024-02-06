@@ -1,6 +1,6 @@
 #include "../include/snake.h"
 
-#define cols 10
+#define cols 20
 #define rows 10
 
 char board [rows * cols];
@@ -32,4 +32,17 @@ void print_board()
         }
         my_putchar('\n');    
     }
+}
+
+void draw_snake()
+{
+    int xsnake = 10;
+    int ysnake = 5;
+
+    board[ysnake * cols + xsnake] = 'S';
+}
+
+void move_snake()
+{
+
 }
