@@ -23,6 +23,9 @@ void fill_board();
 void print_board();
 void my_putchar(char c);
 int main(int ac, char **av);
+void draw_snake();
+
+
 
 static const struct flag_s flags[] = {
     {"-h", &help},
