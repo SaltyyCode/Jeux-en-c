@@ -3,9 +3,9 @@ Games in C
 Welcome to my GitHub repository "Games in C"! This project is my first repository as a computer science student, where I share with you my replicas of classic games developed in the C programming language. My goal is to practice my programming skills whith versions of games we all know and love.
 
 Available Games : 
-TicTacToe: A classic replica of the TicTacToe game (also known as Noughts and Crosses), with an additional feature in development to enable playing against the computer.
+- TicTacToe: A classic replica of the TicTacToe game (also known as Noughts and Crosses), with an additional feature in development to enable playing against the computer.
 
-Snake: Currently under development, this replica of the Snake game, done in collaboration with @LudecielDev. Stay tuned for updates and the official release.
+- Snake: Currently under development, this replica of the Snake game, done in collaboration with @LudecielDev. Stay tuned for updates and the official release.
 
 Technologies : 
 The games are entirely developed in C, leveraging its speed and simplicity to create efficient and accessible games.
