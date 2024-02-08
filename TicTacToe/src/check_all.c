@@ -31,9 +31,9 @@ int check_move()
 void check_win(char WINNER)
 {
     if (WINNER == JOUEUR)
-        printf("Joueur 1 a gagné");
+        printf("Joueur 1 a gagné\n");
     else if (WINNER == JOUEUR2)
-        printf("Joueur 2 a gagné");
+        printf("Joueur 2 a gagné\n");
     else 
         printf("Match Nul");
 }
