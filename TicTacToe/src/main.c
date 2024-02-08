@@ -5,9 +5,17 @@ const char JOUEUR = 'O';
 const char JOUEUR2 = 'X';
 char WINNER = ' ';
 
-int main() {
-    
+int main(int ac, char **av)
+{
     char continuer = 'O';
+
+    if (ac == 2 && av[1][0] == '-' && av[1][1 == 'h']){
+        printf("TicTacToe game, soon playable against computer :)\n");
+        printf("Usage : ./TicTacToe\n");
+        return 0;
+    }
+    if (ac != 1)
+        return 84;
 
     while (continuer == 'O' || continuer == 'o') {
         reset_board();
