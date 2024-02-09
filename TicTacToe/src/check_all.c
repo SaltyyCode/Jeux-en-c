@@ -34,6 +34,8 @@ void check_win(char WINNER)
         printf("Joueur 1 a gagné\n");
     else if (WINNER == JOUEUR2)
         printf("Joueur 2 a gagné\n");
-    else 
-        printf("Match Nul");
+    else if (WINNER == BOT)
+        printf("Le bot a gagné lul\n");
+    else
+        printf("Match Nul\n");
 }
