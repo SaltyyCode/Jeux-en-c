@@ -3,6 +3,7 @@
 char board[3][3];
 const char JOUEUR = 'O';
 const char JOUEUR2 = 'X';
+const char BOT = 'X';
 char WINNER = ' ';
 
 int main(int ac, char **av)
