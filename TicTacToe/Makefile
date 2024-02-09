@@ -5,7 +5,8 @@ CFLAGS	=	-W -Wall -Wextra
 SRC =	src/players_move.c \
 		src/print_and_reset_board.c \
 		src/main.c \
-		src/check_all.c
+		src/check_all.c \
+		src/play_bot.c 
 
 
 OBJ = $(SRC:.c=.o)
