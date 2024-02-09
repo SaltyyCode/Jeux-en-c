@@ -30,7 +30,7 @@ int main(int ac, char **av)
             if (WINNER != ' ' || check_cell() == 0)
             break;
             print_board();
-            player_move2();
+            bot_move();
             WINNER = check_move();
             if (WINNER != ' ' || check_cell() == 0)
             break;
@@ -42,4 +42,3 @@ int main(int ac, char **av)
         scanf(" %c", &continuer);
     }
     return 0;
-}
