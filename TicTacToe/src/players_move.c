@@ -15,7 +15,7 @@ void player_move()
     y--;
 
     if (board[x][y] != ' '){
-        printf("Coup invalide");
+        printf("Coup invalide\n");
     } else{
         board[x][y] = JOUEUR;
         break;
@@ -38,7 +38,7 @@ void player_move2()
     y--;
 
     if (board[x][y] != ' '){
-        printf("Coup invalide");
+        printf("Coup invalide\n");
     } else{
         board[x][y] = JOUEUR2;
         break;
