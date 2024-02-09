@@ -16,7 +16,7 @@ Each folder in this repository contains the source files for a different game. T
 - Clone the repository to your local machine.
 - Navigate to the folder of the game you want to play.
 - Compile the source code using a make command
-- Run the generated executable file.
+- Run the generated executable file or use ./*generated execuatble file* -h for help and usage.
 
 Contributions:
 Contributions are welcome! If you have any suggestions for improvements, bug fixes, or even ideas for new games to develop, please don't hesitate to open an issue or submit a pull request.
