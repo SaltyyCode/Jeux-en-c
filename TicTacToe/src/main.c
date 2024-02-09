@@ -10,31 +10,17 @@ int main(int ac, char **av)
 {
     char continuer = 'O';
 
-    if (ac == 2 && av[1][0] == '-' && av[1][1 == 'h']){
-        printf("TicTacToe game, soon playable against computer :)\n");
-        printf("Usage : ./TicTacToe\n");
+    if (ac == 2 && av[1][0] == '-' && av[1][1] == 'h'){
+        printf("Usage : ./TicTacToe\nuse ./TicTacToe IA pour joueur contre l'IA !");
         return 0;
     }
-    if (ac != 1)
-        return 84;
-
     while (continuer == 'O' || continuer == 'o') {
         reset_board();
         WINNER = ' ';
-
-
-        while (WINNER == ' ' && check_cell() != 0) {
-            print_board();
-            player_move();
-            WINNER = check_move();
-            if (WINNER != ' ' || check_cell() == 0)
-            break;
-            print_board();
-            bot_move();
-            WINNER = check_move();
-            if (WINNER != ' ' || check_cell() == 0)
-            break;
-        }
+        if (ac > 1 && (strcmp(av[1], "IA") == 0 || strcmp(av[1], "ia") == 0)){
+            play_against_bot();
+        }else 
+            play_against_human();
 
         print_board();
         check_win(WINNER);
@@ -42,3 +28,4 @@ int main(int ac, char **av)
         scanf(" %c", &continuer);
     }
     return 0;
+}
