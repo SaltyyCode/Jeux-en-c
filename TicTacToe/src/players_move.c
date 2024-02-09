@@ -9,7 +9,7 @@ void player_move()
     do {
         printf("Entrez Ligne (1-3): ");
         input = scanf("%d", &x);
-        if(input != 1) {
+        if(input != 1 || x < 1 || x > 3){
             while(getchar() != '\n');
             printf("Veuillez entrer un chiffre entre 1 et 3.\n");
             continue;
@@ -18,7 +18,7 @@ void player_move()
         printf("Entrez Colonne (1-3): ");
         input = scanf("%d", &y);
 
-        if(input != 1 || x < 0 || x > 2 || y < 1 || y > 3) {
+        if(input != 1 || y < 1 || y > 3) {
             while(getchar() != '\n');
             printf("Veuillez entrer un chiffre entre 1 et 3.\n");
             continue;
