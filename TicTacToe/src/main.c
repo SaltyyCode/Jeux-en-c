@@ -11,7 +11,7 @@ int main(int ac, char **av)
     char continuer = 'O';
 
     if (ac == 2 && av[1][0] == '-' && av[1][1] == 'h'){
-        printf("Usage : ./TicTacToe\nuse ./TicTacToe IA pour joueur contre l'IA !");
+        printf("Usage : ./TicTacToe\nuse ./TicTacToe IA pour joueur contre l'IA !\n");
         return 0;
     }
     while (continuer == 'O' || continuer == 'o') {
