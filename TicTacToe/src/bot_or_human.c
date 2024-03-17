@@ -9,7 +9,7 @@ void play_against_bot()
             if (WINNER != ' ' || check_cell() == 0)
             break;
             print_board();
-            bot_move();
+            best_move();
             WINNER = check_move();
             if (WINNER != ' ' || check_cell() == 0)
             break;
