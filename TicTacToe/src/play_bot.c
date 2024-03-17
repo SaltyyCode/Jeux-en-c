@@ -1,5 +1,16 @@
 #include "../include/tictactoe.h"
 
+int max(int a, int b)
+{
+    return (a > b) ? a : b;
+}
+
+int min(int a, int b)
+{
+    return (a < b) ? a : b;
+}
+
+
 int my_eval (char board[3][3])
 {
     for (int r = 0; r < 3; r++){
