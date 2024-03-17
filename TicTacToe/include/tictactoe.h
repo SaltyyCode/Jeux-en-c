@@ -24,6 +24,8 @@ void play_against_bot();
 int my_eval (char board[3][3]);
 int minimax (char board[3][3], int depth, int isMaximinzing);
 void best_move();
+int max(int a, int b);
+int min(int a, int b);
 
 
 #endif /*TICTACTOE*/
