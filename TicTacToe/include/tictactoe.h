@@ -19,9 +19,11 @@ void print_board();
 int check_cell();
 int check_move();
 void check_win(char WINNER);
-void bot_move();
 void play_against_human();
 void play_against_bot();
+int my_eval (char board[3][3]);
+int minimax (char board[3][3], int depth, int isMaximinzing);
+void best_move();
 
 
 #endif /*TICTACTOE*/
